@@ -87,7 +87,7 @@ const Projects = () => {
                   href="https://kamilyan.github.io/TodoList/"
                   target="_blank"
                 >
-                  Live LIVE
+                  Live Demo
                 </UrlButton>
                 <UrlButton
                   href="https://github.com/kamilyan/TodoList/tree/master"
@@ -177,7 +177,7 @@ const Projects = () => {
                   href="https://cinema-management-sys.herokuapp.com/login"
                   target="_blank"
                 >
-                  Live LIVE
+                  Live Demo
                 </UrlButton>
                 <UrlButton
                   href="https://github.com/kamilyan/cinema-web-site"
