@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import MyNavbar from "./components/myNavbar";
+import MyCarousel from "./components/myCarousel";
+import TitleMessage from "./components/titleMessage";
+import About from "./pages/about";
+import {Fade,Slide} from "react-reveal";
+import { Parallax } from "react-parallax";
+import { Container } from "react-bootstrap";
+import bgImage from "./assets/img/parallex/background.webp"
+import Skills from "./pages/skills"
+import Projects from "./pages/projects"
+import Contact from "./pages/contact"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <MyNavbar />
+      <MyCarousel />
+      <TitleMessage />
+      <div>
+        <Parallax
+          blur={{ min: -15, max: 15 }}
+          bgImage={bgImage}
+          bgImageAlt=""
+          strength={-200}
         >
-          Learn React
-        </a>
-      </header>
+          <div>
+            <Container className="container-box">
+              <Fade duration={500}>
+                <About />
+              </Fade>
+            </Container>
+          </div>
+        </Parallax>
+      </div>
+      <Container className="container-box">
+        <Slide bottom duration={600}>
+          <hr />
+          <Skills />
+        </Slide>
+      </Container>
+      <Container className="container-box">
+        <Slide bottom duration={600}>
+          <hr />
+          <Projects />
+        </Slide>
+      </Container>
+      <Container className="container-box">
+        <Slide bottom duration={600}>
+          <hr />
+          <Contact />
+        </Slide>
+      </Container>
     </div>
   );
 }

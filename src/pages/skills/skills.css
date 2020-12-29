@@ -1,0 +1,20 @@
+.focus {
+  transition: transform 0.5s;
+}
+
+.focus:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image-style {
+  width: 3rem;
+}
+
+.myCards {
+  cursor: pointer;
+}

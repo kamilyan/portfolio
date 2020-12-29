@@ -1,0 +1,15 @@
+.accordian-header {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: rgb(9, 255, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.list-styles {
+  list-style-type: circle;
+}
+
+.image-style1 {
+  width: 3em;
+}
