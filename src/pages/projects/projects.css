@@ -6,6 +6,13 @@
   font-weight: 500;
 }
 
+.cardProject {
+  transition: transform 1s ease;
+}
+
+.cardProject:hover {
+  transform: scale(1.05);
+}
 .list-styles {
   list-style-type: circle;
 }
