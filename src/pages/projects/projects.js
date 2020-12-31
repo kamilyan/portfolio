@@ -46,7 +46,7 @@ const Projects = () => {
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Amount of reconvers and deaths</li>
+                          <li>Amount of recovers and deaths</li>
                           <li>Data visualization</li>
                           <li>Respoisive Design</li>
                         </ul>
