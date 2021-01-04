@@ -1,7 +1,7 @@
-.font-details {
-    font-size: 3em;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-  }
-  
+.contactForm {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  width: 60%;
+  margin: 2rem auto;
+}
