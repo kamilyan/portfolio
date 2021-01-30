@@ -6,6 +6,7 @@ import ExpressCinemaProject from '../../assets/img/projects/cinema-management-sy
 import ReactCoronaTracker from '../../assets/img/projects/corona-tracker.webp'
 import ReactTodoList from '../../assets/img/projects/TodoList.webp'
 import MernElectronicShop from '../../assets/img/projects/Electronic-shop.webp'
+import MernSocialMedia from '../../assets/img/projects/Social-Media.webp'
 
 import HTML5 from '../../assets/img/skills/html-5.svg'
 import CSS3 from '../../assets/img/skills/css3.svg'
@@ -22,6 +23,90 @@ const Projects = () => {
       <h1 className='pt-3 text-center font-details pb-3'>PROJECTS</h1>
       <Timeline>
         <Events>
+          <ImageEvent
+            date='1/2021'
+            className='text-center font-weight-bold cardProject'
+            text='Social-Media'
+            src={MernSocialMedia}
+            alt='Social-Media'>
+            <div className='d-flex flex-column mt-1'>
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey='0'
+                      className='p-1 text-center accordian-header'>
+                      More Details
+                    </Accordion.Toggle>
+                    <Accordion.Collapse eventKey='0'>
+                      <Card.Body className='text-left font-weight-normal'>
+                        <strong>Description:</strong> Social media platform.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className='list-styles pt-1'>
+                          <li>Users following each others</li>
+                          <li>Who to follow suggestions</li>
+                          <li>Posting messages with photos</li>
+                          <li>Commenting on posts</li>
+                          <li>Liking posts</li>
+                          <li>JWT authentication</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <Image
+                              src={MongoDB}
+                              alt='Express'
+                              rounded
+                              className='image-style m-1'></Image>{' '}
+                            MongoDB
+                          </li>
+                          <li>
+                            <Image
+                              src={EXPRESS}
+                              alt='Express'
+                              rounded
+                              className='image-style m-1'></Image>{' '}
+                            Express
+                          </li>
+                          <li>
+                            <Image
+                              src={REACT}
+                              alt='React'
+                              rounded
+                              className='image-style1 m-1'></Image>{' '}
+                            React
+                          </li>
+                          <li>
+                            <Image
+                              src={NODE_JS}
+                              alt='NodeJS'
+                              rounded
+                              className='image-style1 m-1'></Image>{' '}
+                            Node.js
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className='d-flex justify-content-between'>
+                <UrlButton
+                  href='https://social-media-mern-project.herokuapp.com/'
+                  target='_blank'>
+                  Live Demo
+                </UrlButton>
+                <UrlButton
+                  href='https://github.com/kamilyan/social-media-mern'
+                  target='_blank'>
+                  SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
           <ImageEvent
             date='1/2021'
             className='text-center font-weight-bold cardProject'
