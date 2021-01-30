@@ -11,19 +11,14 @@ class Contact extends Component {
   }
   handleSubmit(e) {
     e.preventDefault()
-    const { email, subject, message } = this.state
-    let templateParams = {
-      from_name: email,
-      to_name: 'maorkamilyan@gmail.com',
-      subject: subject,
-      message_html: message,
-    }
-    emailjs.send(
-      'gmail',
-      'template_j0h9wfw',
-      templateParams,
-      'user_tosK8p7cQptxXwvfVFCtN'
+    console.log(e.target)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      e.target,
+      process.env.REACT_APP_USER_ID
     )
+    e.target.reset()
     this.resetForm()
   }
   resetForm() {
